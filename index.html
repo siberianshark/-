@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Prata&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="dark-overlay"></div>
+    <section class="baner">
+        <header class="header sticky">
+            <div class="header__logo">
+                <a class="logo__img logo__style" href="#">creative</a>
+            </div>
+            <nav class="navigate">
+                <ul class="navigate__list">
+                    <li class="navigate__item1">about us</li>
+                    <li class="navigate__item2">products</li>
+                    <li class="navigate__item3">contacts</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="baner__image">
+            <div></div>
+        </div>
+        <section class="information">
+            <h1 class="information__text">
+                Creative company <br> Peak
+            </h1>
+            <p class="information__param">
+                create and win.
+            </p>
+            <div class="special">
+                <ul class="special__list">
+                    <li class="special__item">
+                        <a href="#" class="special__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="37" fill="none"><path fill="none" d="M.5.5h38v36H.5z"/><path fill="#fff" fill-opacity="0" d="M.5.5h38v36H.5z"/><g clip-path="url(#a)"><path fill="none" d="M37 18.5C37 28.71 28.71 37 18.5 37 8.28 37 0 28.71 0 18.5 0 8.28 8.28 0 18.5 0 28.71 0 37 8.28 37 18.5Z"/><path fill="#EFCFAD" fill-rule="evenodd" d="M18.5 37C28.71 37 37 28.71 37 18.5 37 8.28 28.71 0 18.5 0 8.28 0 0 8.28 0 18.5 0 28.71 8.28 37 18.5 37Zm6.33-3.21c-1.95.8-4.06 1.21-6.33 1.21-2.28 0-4.39-.41-6.34-1.21-1.94-.81-3.72-2.02-5.33-3.63-1.61-1.61-2.82-3.39-3.63-5.33C2.4 22.88 2 20.77 2 18.5c0-2.28.4-4.39 1.2-6.34.81-1.94 2.02-3.72 3.63-5.33 1.61-1.61 3.39-2.82 5.33-3.63C14.11 2.4 16.22 2 18.5 2c2.27 0 4.38.4 6.33 1.2 1.94.81 3.72 2.02 5.33 3.63 1.61 1.61 2.82 3.39 3.63 5.33.8 1.95 1.21 4.06 1.21 6.34 0 2.27-.41 4.38-1.21 6.33-.81 1.94-2.02 3.72-3.63 5.33-1.61 1.61-3.39 2.82-5.33 3.63Z"/><path fill="#A4907D" d="M36.09 12.77a18.62 18.62 0 0 0-2.18-4.51l-16.2 16.87.04 1.87h.76l17.58-14.23Z"/><path fill="#fff" d="M39 6c-.24-1.24-2.5-2-2.5-2-.46-.45-3.05 2.05-3.5 2.5L18.07 21.99l-6.57-7.5c-.46-.44-1.55-.94-2-.5l-2.14 1.43c-.45.45-.45 1.17 0 1.61l9.76 9.65c.26.25.61.36.95.32.34.04.69-.07.95-.32l18-17.79C37.47 8.44 39.25 7.33 39 6Z"/><path fill="#EFCFAD" d="m19.02 26.68 18-17.79C38.5 8 39.45 6.44 39 6c-.46-.45-2.51.75-2.51.75L17.96 24.96l-10.2-9.94-.4.4a1.14 1.14 0 0 0 0 1.62l9.76 9.64c.26.26.61.36.95.32.34.04.69-.06.95-.32Z"/></g></svg>
+                        </a>
+                        just
+                        <span class="special__count">$1 000</span>
+                        for a new customer
+                    </li>
+                    <li class="special__item">
+                        <a href="#" class="special__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="37" fill="none"><path fill="none" d="M.5.5h38v36H.5z"/><path fill="#fff" fill-opacity="0" d="M.5.5h38v36H.5z"/><g clip-path="url(#a)"><path fill="none" d="M37 18.5C37 28.71 28.71 37 18.5 37 8.28 37 0 28.71 0 18.5 0 8.28 8.28 0 18.5 0 28.71 0 37 8.28 37 18.5Z"/><path fill="#EFCFAD" fill-rule="evenodd" d="M18.5 37C28.71 37 37 28.71 37 18.5 37 8.28 28.71 0 18.5 0 8.28 0 0 8.28 0 18.5 0 28.71 8.28 37 18.5 37Zm6.33-3.21c-1.95.8-4.06 1.21-6.33 1.21-2.28 0-4.39-.41-6.34-1.21-1.94-.81-3.72-2.02-5.33-3.63-1.61-1.61-2.82-3.39-3.63-5.33C2.4 22.88 2 20.77 2 18.5c0-2.28.4-4.39 1.2-6.34.81-1.94 2.02-3.72 3.63-5.33 1.61-1.61 3.39-2.82 5.33-3.63C14.11 2.4 16.22 2 18.5 2c2.27 0 4.38.4 6.33 1.2 1.94.81 3.72 2.02 5.33 3.63 1.61 1.61 2.82 3.39 3.63 5.33.8 1.95 1.21 4.06 1.21 6.34 0 2.27-.41 4.38-1.21 6.33-.81 1.94-2.02 3.72-3.63 5.33-1.61 1.61-3.39 2.82-5.33 3.63Z"/><path fill="#A4907D" d="M36.09 12.77a18.62 18.62 0 0 0-2.18-4.51l-16.2 16.87.04 1.87h.76l17.58-14.23Z"/><path fill="#fff" d="M39 6c-.24-1.24-2.5-2-2.5-2-.46-.45-3.05 2.05-3.5 2.5L18.07 21.99l-6.57-7.5c-.46-.44-1.55-.94-2-.5l-2.14 1.43c-.45.45-.45 1.17 0 1.61l9.76 9.65c.26.25.61.36.95.32.34.04.69-.07.95-.32l18-17.79C37.47 8.44 39.25 7.33 39 6Z"/><path fill="#EFCFAD" d="m19.02 26.68 18-17.79C38.5 8 39.45 6.44 39 6c-.46-.45-2.51.75-2.51.75L17.96 24.96l-10.2-9.94-.4.4a1.14 1.14 0 0 0 0 1.62l9.76 9.64c.26.26.61.36.95.32.34.04.69-.06.95-.32Z"/></g></svg>
+                        </a>
+                        <span class="special__count">30%</span>
+                        of all customers
+                    </li>
+                    <li class="special__item">
+                        <a href="#" class="special__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="37" fill="none"><path fill="none" d="M.5.5h38v36H.5z"/><path fill="#fff" fill-opacity="0" d="M.5.5h38v36H.5z"/><g clip-path="url(#a)"><path fill="none" d="M37 18.5C37 28.71 28.71 37 18.5 37 8.28 37 0 28.71 0 18.5 0 8.28 8.28 0 18.5 0 28.71 0 37 8.28 37 18.5Z"/><path fill="#EFCFAD" fill-rule="evenodd" d="M18.5 37C28.71 37 37 28.71 37 18.5 37 8.28 28.71 0 18.5 0 8.28 0 0 8.28 0 18.5 0 28.71 8.28 37 18.5 37Zm6.33-3.21c-1.95.8-4.06 1.21-6.33 1.21-2.28 0-4.39-.41-6.34-1.21-1.94-.81-3.72-2.02-5.33-3.63-1.61-1.61-2.82-3.39-3.63-5.33C2.4 22.88 2 20.77 2 18.5c0-2.28.4-4.39 1.2-6.34.81-1.94 2.02-3.72 3.63-5.33 1.61-1.61 3.39-2.82 5.33-3.63C14.11 2.4 16.22 2 18.5 2c2.27 0 4.38.4 6.33 1.2 1.94.81 3.72 2.02 5.33 3.63 1.61 1.61 2.82 3.39 3.63 5.33.8 1.95 1.21 4.06 1.21 6.34 0 2.27-.41 4.38-1.21 6.33-.81 1.94-2.02 3.72-3.63 5.33-1.61 1.61-3.39 2.82-5.33 3.63Z"/><path fill="#A4907D" d="M36.09 12.77a18.62 18.62 0 0 0-2.18-4.51l-16.2 16.87.04 1.87h.76l17.58-14.23Z"/><path fill="#fff" d="M39 6c-.24-1.24-2.5-2-2.5-2-.46-.45-3.05 2.05-3.5 2.5L18.07 21.99l-6.57-7.5c-.46-.44-1.55-.94-2-.5l-2.14 1.43c-.45.45-.45 1.17 0 1.61l9.76 9.65c.26.25.61.36.95.32.34.04.69-.07.95-.32l18-17.79C37.47 8.44 39.25 7.33 39 6Z"/><path fill="#EFCFAD" d="m19.02 26.68 18-17.79C38.5 8 39.45 6.44 39 6c-.46-.45-2.51.75-2.51.75L17.96 24.96l-10.2-9.94-.4.4a1.14 1.14 0 0 0 0 1.62l9.76 9.64c.26.26.61.36.95.32.34.04.69-.06.95-.32Z"/></g></svg>
+                        </a>
+                        Almost
+                        <span class="special__count">99%</span>
+                        of customers return
+                    </li>
+                </ul>
+                <button class="special__button">Learn more</button>
+            </div>
+        </section>
+    </section>
+
+    <div class="form__space"></div>
+    <section class="active">
+        <div class="active__container">
+            <div class="active__image_l"><a href="#"></a></div>
+            <div class="active__list">
+                <div class="active__item">
+                    <div class="active__item_list special__active">
+                        <a href="#" class="active__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="58.001" height="47" fill="none"><path fill="#D5C9BE" fill-rule="evenodd" d="M22.454 4.041a1.217 1.217 0 0 0 1.233-.81A5.984 5.984 0 0 1 25.89.868a5.935 5.935 0 0 1 6.182 0 6.015 6.015 0 0 1 2.202 2.361c.091.254.26.47.48.614.223.144.487.215.752.197 3.062 0 5.565 2.201 5.565 3.51 0 .646-.497.947-1.185 1.072-2.319.402-3.559 1.309-5.388 4.152-2.01 3.176-4.858 7.618-5.002 7.852-.235.35-.368.383-.534.383-.165 0-.29-.037-.515-.383-.154-.234-2.966-4.676-5.002-7.844-1.78-2.834-3.065-3.754-5.387-4.156-.682-.125-1.186-.426-1.186-1.072.023-1.313 2.54-3.51 5.583-3.51V4.04Zm-9.76 5.928c2.937 0 6.05 1.273 8.56 5.22 1.277 2.002 5.565 8.791 5.632 8.915.073.1.11.222.114.35a.683.683 0 0 1-.118.362c-.085.12-3.644 5.768-3.74 5.924a.536.536 0 0 1-.463.276.501.501 0 0 1-.441-.283c-.09-.128-6.842-11.067-8.2-13.303-1.36-2.233-3.111-3.9-5.896-3.9-.593 0-.774-.305-.774-.647 0-.842 1.413-2.914 5.322-2.914h.003ZM22.825 47a4.903 4.903 0 0 1-4.259-2.455S7.074 26.155 5.517 23.69c-2.054-3.343-2.753-4.32-4.616-4.32-.735 0-.901-.412-.901-.795 0-1.072 1.704-2.695 4.799-2.695 2.334 0 5.05.92 7.398 4.701 0 0 5.742 9.129 10.026 15.896.162.256.29.413.545.413.253 0 .433-.252.526-.413 2.112-3.402 12.097-19.287 13.386-21.285 2.51-3.947 5.612-5.22 8.56-5.22 3.908 0 5.34 2.072 5.34 2.914 0 .341-.183.646-.776.646-2.79 0-4.538 1.672-5.893 3.9-1.354 2.23-15.829 25.538-16.815 27.124a4.871 4.871 0 0 1-1.808 1.804c-.75.43-1.6.65-2.462.639Zm34.269-27.629c-1.863 0-2.558.977-4.615 4.32-1.524 2.463-13.022 20.854-13.022 20.854a4.923 4.923 0 0 1-1.804 1.8 4.86 4.86 0 0 1-2.45.655 4.994 4.994 0 0 1-4.045-2.065 1.014 1.014 0 0 1-.27-.546c.034-.207.126-.4.27-.557.095-.164 14.644-23.25 14.644-23.25 2.374-3.781 5.072-4.701 7.398-4.701 3.095 0 4.799 1.623 4.799 2.695 0 .383-.173.795-.901.795h-.004Z" clip-rule="evenodd"/></svg>
+                        </a>
+                        <p class="active__text active__text_a">Pik helps to create unique brands, including the development of logos.</p>
+                    </div>
+                    <div class="active__line"></div>
+                    <div class="active__item_list">
+                        <a href="#" class="active__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="58.001" height="47" fill="none"><path fill="#D5C9BE" fill-rule="evenodd" d="M22.454 4.041a1.217 1.217 0 0 0 1.233-.81A5.984 5.984 0 0 1 25.89.868a5.935 5.935 0 0 1 6.182 0 6.015 6.015 0 0 1 2.202 2.361c.091.254.26.47.48.614.223.144.487.215.752.197 3.062 0 5.565 2.201 5.565 3.51 0 .646-.497.947-1.185 1.072-2.319.402-3.559 1.309-5.388 4.152-2.01 3.176-4.858 7.618-5.002 7.852-.235.35-.368.383-.534.383-.165 0-.29-.037-.515-.383-.154-.234-2.966-4.676-5.002-7.844-1.78-2.834-3.065-3.754-5.387-4.156-.682-.125-1.186-.426-1.186-1.072.023-1.313 2.54-3.51 5.583-3.51V4.04Zm-9.76 5.928c2.937 0 6.05 1.273 8.56 5.22 1.277 2.002 5.565 8.791 5.632 8.915.073.1.11.222.114.35a.683.683 0 0 1-.118.362c-.085.12-3.644 5.768-3.74 5.924a.536.536 0 0 1-.463.276.501.501 0 0 1-.441-.283c-.09-.128-6.842-11.067-8.2-13.303-1.36-2.233-3.111-3.9-5.896-3.9-.593 0-.774-.305-.774-.647 0-.842 1.413-2.914 5.322-2.914h.003ZM22.825 47a4.903 4.903 0 0 1-4.259-2.455S7.074 26.155 5.517 23.69c-2.054-3.343-2.753-4.32-4.616-4.32-.735 0-.901-.412-.901-.795 0-1.072 1.704-2.695 4.799-2.695 2.334 0 5.05.92 7.398 4.701 0 0 5.742 9.129 10.026 15.896.162.256.29.413.545.413.253 0 .433-.252.526-.413 2.112-3.402 12.097-19.287 13.386-21.285 2.51-3.947 5.612-5.22 8.56-5.22 3.908 0 5.34 2.072 5.34 2.914 0 .341-.183.646-.776.646-2.79 0-4.538 1.672-5.893 3.9-1.354 2.23-15.829 25.538-16.815 27.124a4.871 4.871 0 0 1-1.808 1.804c-.75.43-1.6.65-2.462.639Zm34.269-27.629c-1.863 0-2.558.977-4.615 4.32-1.524 2.463-13.022 20.854-13.022 20.854a4.923 4.923 0 0 1-1.804 1.8 4.86 4.86 0 0 1-2.45.655 4.994 4.994 0 0 1-4.045-2.065 1.014 1.014 0 0 1-.27-.546c.034-.207.126-.4.27-.557.095-.164 14.644-23.25 14.644-23.25 2.374-3.781 5.072-4.701 7.398-4.701 3.095 0 4.799 1.623 4.799 2.695 0 .383-.173.795-.901.795h-.004Z" clip-rule="evenodd"/></svg>
+                        </a>
+                        <p class="active__text active__text_b">The company develops and implements creative advertising campaigns that attract the attention of the target audience.</p>
+                    </div>
+                    <div class="active__line"></div>
+                    <div class="active__item_list">
+                        <a href="#" class="active__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="58.001" height="47" fill="none"><path fill="#D5C9BE" fill-rule="evenodd" d="M22.454 4.041a1.217 1.217 0 0 0 1.233-.81A5.984 5.984 0 0 1 25.89.868a5.935 5.935 0 0 1 6.182 0 6.015 6.015 0 0 1 2.202 2.361c.091.254.26.47.48.614.223.144.487.215.752.197 3.062 0 5.565 2.201 5.565 3.51 0 .646-.497.947-1.185 1.072-2.319.402-3.559 1.309-5.388 4.152-2.01 3.176-4.858 7.618-5.002 7.852-.235.35-.368.383-.534.383-.165 0-.29-.037-.515-.383-.154-.234-2.966-4.676-5.002-7.844-1.78-2.834-3.065-3.754-5.387-4.156-.682-.125-1.186-.426-1.186-1.072.023-1.313 2.54-3.51 5.583-3.51V4.04Zm-9.76 5.928c2.937 0 6.05 1.273 8.56 5.22 1.277 2.002 5.565 8.791 5.632 8.915.073.1.11.222.114.35a.683.683 0 0 1-.118.362c-.085.12-3.644 5.768-3.74 5.924a.536.536 0 0 1-.463.276.501.501 0 0 1-.441-.283c-.09-.128-6.842-11.067-8.2-13.303-1.36-2.233-3.111-3.9-5.896-3.9-.593 0-.774-.305-.774-.647 0-.842 1.413-2.914 5.322-2.914h.003ZM22.825 47a4.903 4.903 0 0 1-4.259-2.455S7.074 26.155 5.517 23.69c-2.054-3.343-2.753-4.32-4.616-4.32-.735 0-.901-.412-.901-.795 0-1.072 1.704-2.695 4.799-2.695 2.334 0 5.05.92 7.398 4.701 0 0 5.742 9.129 10.026 15.896.162.256.29.413.545.413.253 0 .433-.252.526-.413 2.112-3.402 12.097-19.287 13.386-21.285 2.51-3.947 5.612-5.22 8.56-5.22 3.908 0 5.34 2.072 5.34 2.914 0 .341-.183.646-.776.646-2.79 0-4.538 1.672-5.893 3.9-1.354 2.23-15.829 25.538-16.815 27.124a4.871 4.871 0 0 1-1.808 1.804c-.75.43-1.6.65-2.462.639Zm34.269-27.629c-1.863 0-2.558.977-4.615 4.32-1.524 2.463-13.022 20.854-13.022 20.854a4.923 4.923 0 0 1-1.804 1.8 4.86 4.86 0 0 1-2.45.655 4.994 4.994 0 0 1-4.045-2.065 1.014 1.014 0 0 1-.27-.546c.034-.207.126-.4.27-.557.095-.164 14.644-23.25 14.644-23.25 2.374-3.781 5.072-4.701 7.398-4.701 3.095 0 4.799 1.623 4.799 2.695 0 .383-.173.795-.901.795h-.004Z" clip-rule="evenodd"/></svg>
+                        </a>
+                        <p class="active__text active__text_c">The company engages in online promotion, including SEO, SMM, and contextual advertising.</p>
+                    </div>
+                    <div class="active__line"></div>
+                    <div class="active__item_list">
+                        <a href="#" class="active__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="58.001" height="47" fill="none"><path fill="#D5C9BE" fill-rule="evenodd" d="M22.454 4.041a1.217 1.217 0 0 0 1.233-.81A5.984 5.984 0 0 1 25.89.868a5.935 5.935 0 0 1 6.182 0 6.015 6.015 0 0 1 2.202 2.361c.091.254.26.47.48.614.223.144.487.215.752.197 3.062 0 5.565 2.201 5.565 3.51 0 .646-.497.947-1.185 1.072-2.319.402-3.559 1.309-5.388 4.152-2.01 3.176-4.858 7.618-5.002 7.852-.235.35-.368.383-.534.383-.165 0-.29-.037-.515-.383-.154-.234-2.966-4.676-5.002-7.844-1.78-2.834-3.065-3.754-5.387-4.156-.682-.125-1.186-.426-1.186-1.072.023-1.313 2.54-3.51 5.583-3.51V4.04Zm-9.76 5.928c2.937 0 6.05 1.273 8.56 5.22 1.277 2.002 5.565 8.791 5.632 8.915.073.1.11.222.114.35a.683.683 0 0 1-.118.362c-.085.12-3.644 5.768-3.74 5.924a.536.536 0 0 1-.463.276.501.501 0 0 1-.441-.283c-.09-.128-6.842-11.067-8.2-13.303-1.36-2.233-3.111-3.9-5.896-3.9-.593 0-.774-.305-.774-.647 0-.842 1.413-2.914 5.322-2.914h.003ZM22.825 47a4.903 4.903 0 0 1-4.259-2.455S7.074 26.155 5.517 23.69c-2.054-3.343-2.753-4.32-4.616-4.32-.735 0-.901-.412-.901-.795 0-1.072 1.704-2.695 4.799-2.695 2.334 0 5.05.92 7.398 4.701 0 0 5.742 9.129 10.026 15.896.162.256.29.413.545.413.253 0 .433-.252.526-.413 2.112-3.402 12.097-19.287 13.386-21.285 2.51-3.947 5.612-5.22 8.56-5.22 3.908 0 5.34 2.072 5.34 2.914 0 .341-.183.646-.776.646-2.79 0-4.538 1.672-5.893 3.9-1.354 2.23-15.829 25.538-16.815 27.124a4.871 4.871 0 0 1-1.808 1.804c-.75.43-1.6.65-2.462.639Zm34.269-27.629c-1.863 0-2.558.977-4.615 4.32-1.524 2.463-13.022 20.854-13.022 20.854a4.923 4.923 0 0 1-1.804 1.8 4.86 4.86 0 0 1-2.45.655 4.994 4.994 0 0 1-4.045-2.065 1.014 1.014 0 0 1-.27-.546c.034-.207.126-.4.27-.557.095-.164 14.644-23.25 14.644-23.25 2.374-3.781 5.072-4.701 7.398-4.701 3.095 0 4.799 1.623 4.799 2.695 0 .383-.173.795-.901.795h-.004Z" clip-rule="evenodd"/></svg>
+                        </a>
+                        <p class="active__text active__text">Pik offers visual content creation services, including graphic design.</p>
+                    </div>
+                </div>
+                <button class="active__button"><span class="active__button_style">Learn More</span></button>
+            </div>
+            <div class="active__image_r"><a href="#"></a></div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact__frame"></div>
+        <div class="contact__container">
+            <div class="contact__image1"></div>
+            <div class="contact__image2"></div>
+            <div class="contact__image3"></div>
+            <div class="contact__image4"></div>
+            <div class="contact__bg"></div>
+            <div class="contact__form">
+                <h1 class="contact__title">Fill out the<br>application right now</h1>
+                <form class="contact__form_list">
+                    <input type="text" id="name" name="name" class="contact__input" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" class="contact__input" placeholder="Your Email" required>
+                    <div class="contact__checkbox">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox_i">
+                            <rect rx="4" width="24" height="24" fill="#FFF"/>
+                            <rect x="1" y="1" rx="4" width="22" height="22" stroke="#405D65" stroke-width="2"/>
+                        </svg>
+                        <input type="checkbox" id="privacy" name="privacy" class="checkbox_h" required>
+                        <label for="privacy" class="contact__checkbox-label">
+                            <a href="#" class="contact__privacy-link">I agree to the Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="contact__submit">submit form</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="space__footer"></div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <div class="footer__line"></div>
+                <div class="footer__line_b"></div>
+                <ul class="footer__menu">
+                    <li class="footer__item"><a href="#" class="footer__link_a">Contact</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link_b">About</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link_c">Products</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <ul class="copyright__container">
+                    <li class="copyright__item1">© 2025, Copyright.</li>
+                    <li class="copyright__item3">Privacy policy</li>
+                    <li class="copyright__item2">Terms of Use</li>
+                </ul>
+            </div>
+            <button class="copyright__button"><span class="button__copy">learn more</span></button>
+        </div>
+        <div class="footer__logo">
+            <span class="footer__decoration">creative</span>
+        </div>
+        <div class="footer__icons">
+            <a href="#" class="footer__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="31" height="31" transform="translate(0.5 0.5)" fill="white" fill-opacity="0"/>
+                    <path d="M21.33 5.33C24.27 5.33 26.66 7.72 26.66 10.66V21.33C26.66 24.27 24.27 26.66 21.33 26.66H10.66C7.71 26.66 5.33 24.27 5.33 21.33V10.66C5.33 7.72 7.71 5.33 10.66 5.33H21.33Z" stroke="#D5C9BE" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M16 20C13.79 20 12 18.2 12 16C12 13.79 13.79 12 16 12C18.2 12 20 13.79 20 16C20 18.2 18.2 20 16 20Z" stroke="#D5C9BE" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M22 10H22" stroke="#D5C9BE" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 15.99C10.94 15.99 9.91 16.31 9.03 16.89C8.16 17.48 7.47 18.31 7.07 19.29C6.66 20.26 6.56 21.33 6.77 22.37C6.97 23.4 7.48 24.35 8.23 25.1C8.97 25.84 9.92 26.35 10.96 26.56C11.99 26.76 13.06 26.66 14.04 26.25C15.01 25.85 15.84 25.17 16.43 24.29C17.02 23.41 17.33 22.38 17.33 21.33L17.33 5.33C17.33 7.09 18.03 8.79 19.28 10.04C20.53 11.29 22.23 11.99 24 11.99" stroke="#D5C9BE" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.99 5.33A2.66 2.66 0 0 1 26.66 7.99v16a2.66 2.66 0 0 1-2.67 2.67H7.99A2.66 2.66 0 0 1 5.33 23.99v-16A2.66 2.66 0 0 1 7.99 5.33h16Z" stroke="#D5C9BE" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M10.66 14.66v6.67M10.66 10.66v.02M16 21.33v-6.67M21.33 21.33v-4c0-.71-.28-1.39-.78-1.89a2.67 2.67 0 0 0-1.89-.78c-.71 0-1.39.28-1.89.78-.5.5-.78 1.18-.78 1.89" stroke="#D5C9BE" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.33 18.66h4v9.34h5.33v-9.34h4l1.33-5.33h-5.33v-2.67c0-.35.14-.69.39-.94.25-.25.59-.39.94-.39h4V4h-4a8 8 0 0 0-5.66 2.34A8 8 0 0 0 13.33 10.66v2.67H9.33v5.33Z" stroke="#D5C9BE" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 13.33 14.66 18.66 22.66 26.66 28 5.33 4 14.66 9.33 17.33 12 25.33 16 19.99" stroke="#D5C9BE" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+            </a>
+            <a href="#" class="footer__icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.66 6.66C25.61 6.66 28 9.05 28 12v8c0 2.94-2.39 5.33-5.34 5.33H9.34C6.38 25.33 4 22.94 4 20v-8c0-2.95 2.38-5.34 5.34-5.34h13.32Z" stroke="#D5C9BE" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M19.99 16 13.33 20V12l6.66 4Z" stroke="#D5C9BE" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
